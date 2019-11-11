@@ -8,10 +8,8 @@
 
 <br>
 
-<img height=600 width=300 src="https://github.com/usman18/ChatAppUI/blob/master/Screenshots/chat1.jpg"
-/><img height=600 width=300 src="https://github.com/usman18/ChatAppUI/blob/master/Screenshots/chat2.jpg" hspace=100
-/>
-
+<img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%232_plants_shop_ui/Screenshots/plantsapp.jpg"
+ hspace=100/>
 ## Contributions
 Contributions are always welcome. Please fork this repository and contribute using pull requests. The pull requests will be thoroughly assessed and if found significant will be accepted.
 
