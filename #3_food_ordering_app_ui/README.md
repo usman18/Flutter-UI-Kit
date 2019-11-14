@@ -2,7 +2,7 @@
   An online food ordering app UI created in Flutter
   
 ## Design Inspiration
-- [Link](https://www.instagram.com/p/B4hHc4MA21_/?igshid=93x4wgwirllq)
+- [Link](https://www.instagram.com/p/B4ns6R3AAFO/?igshid=13girogl1ddzj)
 
 ## ScreenShots
 
