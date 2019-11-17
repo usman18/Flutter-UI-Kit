@@ -8,7 +8,7 @@
 
 <br>
 
-<img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%234_payments_app/Screenshots/paymennts1.jpg"
+<img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%234_payments_app_ui/Screenshots/paymennts1.jpg"
  hspace=150/>
  
 ## Contributions
