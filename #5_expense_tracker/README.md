@@ -1,5 +1,5 @@
 # Expense Tracker UI
-  A single UI of payments app.
+ An expense tracker app UI in Flutter.
   
 ## Design Inspiration
 - [Link](https://www.instagram.com/p/B3v-7E6Ai5r/?igshid=4buomfx7dc9j)
@@ -8,8 +8,7 @@
 
 <br>
 
-<img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%235_expense_tracker/Screenshots/expense1.jpg"
- hspace=80/><img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%235_expense_tracker/Screenshots/expense2.jpg"/>
+<img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%235_expense_tracker/Screenshots/expense1.jpg" hspace=80/><img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%235_expense_tracker/Screenshots/expense2.jpg"/>
  
 ## Contributions
 Contributions are always welcome. Please fork this repository and contribute using pull requests. The pull requests will be thoroughly assessed and if found significant will be accepted.
