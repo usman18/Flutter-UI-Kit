@@ -1,16 +1,24 @@
-# expense_tracker
+# Expense Tracker UI
+  A single UI of payments app.
+  
+## Design Inspiration
+- [Link](https://www.instagram.com/p/B3v-7E6Ai5r/?igshid=4buomfx7dc9j)
 
-A new Flutter application.
+## ScreenShots
 
-## Getting Started
+<br>
 
-This project is a starting point for a Flutter application.
+<img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%235_expense_tracker/Screenshots/expense1.jpg"
+ hspace=80/><img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%235_expense_tracker/Screenshots/expense2.jpg"/>
+ 
+## Contributions
+Contributions are always welcome. Please fork this repository and contribute using pull requests. The pull requests will be thoroughly assessed and if found significant will be accepted.
 
-A few resources to get you started if this is your first Flutter project:
+## Lets become friends
+- [Medium](https://medium.com/@usman18)
+- [Instagram](https://www.instagram.com/usman__khan18)
+- [Twitter](https://www.twitter.com/khan_usman_18)
+- [LinkedIn](https://www.linkedin.com/in/usman-khan-7b04b1138)
+- [Github](https://github.com/usman18)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+My email : uk32971@gmail.com
