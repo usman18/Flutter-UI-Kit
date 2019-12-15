@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:chat_app/chats_provider.dart';
 import 'package:chat_app/model/chat.dart';
 import 'package:chat_app/pages/chat_screen.dart';
@@ -41,11 +42,19 @@ class ChatsScreen extends StatelessWidget {
                     ),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8),
-                      child: Image.network(
-                        ProfilePicturesProvider.pics[position],
-                        fit: BoxFit.fill,
-                        height: 180,
-                      ),
+                      child: CachedNetworkImage(
+                        imageUrl: ProfilePicturesProvider.pics[position],
+                        placeholder: (context, url) => Container(color: Colors.transparent,
+                          child: Center(child: CircularProgressIndicator()),
+                          height: 180,
+                          width: 100,
+                        ),
+                        errorWidget: (context, url, error) => Container(
+                          child: Center(child: Icon(Icons.error)),
+                          height: 180,
+                          width: 100,
+                        ),
+                      )
                     ),
                   );
                 },
