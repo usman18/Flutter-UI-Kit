@@ -8,8 +8,8 @@
 
 <br>
 
-<img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%238_appointment_app/Screenshots/pic1.jpg" hspace=80/><img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%238_appointment_app/Screenshots/pic2.jpg"/></br></br>
-<img height=600 width=300 hspace=250 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%238_appointment_app/Screenshots/pic3.gif"/>
+<img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%239_tour_info_app/Screenshots/pic1.jpg" hspace=80/><img height=600 width=300 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%239_tour_info_app/Screenshots/pic2.jpg"/></br></br>
+<img height=600 width=300 hspace=250 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%239_tour_info_app/Screenshots/pic3.gif"/>
  
 ## Contributions
 Contributions are always welcome. Please fork this repository and contribute using pull requests. The pull requests will be thoroughly assessed and if found significant will be accepted.
