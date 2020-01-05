@@ -61,6 +61,9 @@ class ChatRow extends StatelessWidget {
   }
 
   Widget _buildProfilePic(BuildContext context) {
+
+    String placeHolder = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP._BF2jL6kA3q44G3Wa81SzAHaFG%26pid%3DApi&f=1";
+
     return Container(
       decoration: BoxDecoration(
         shape: BoxShape.circle,
@@ -70,7 +73,9 @@ class ChatRow extends StatelessWidget {
       ),
       padding: EdgeInsets.all(2),
       child: CircleAvatar(
-        backgroundImage: NetworkImage(chat.profilePicUrl, scale: 1),
+        backgroundImage: NetworkImage(chat.profilePicUrl ?? placeHolder,
+        scale: 1
+        ),
       ),
     );
   }
