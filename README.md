@@ -18,3 +18,5 @@
 <img height=500 width=250 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%2311_instagram_ui_redesign/Screenshots/insta1.JPG"/><img height=500 width=250 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%2311_instagram_ui_redesign/Screenshots/insta2.JPG" hspace=50/><img height=500 width=250 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%2312_payments_app_ui/Screenshots/pic.gif"/>
 <br>
 
+
+<img height=500 width=250 src="https://github.com/usman18/Flutter-UI-Kit/blob/master/%2313_github_ui/Screenshots/pic1.gif"/>
