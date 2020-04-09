@@ -9,16 +9,11 @@ const kTextStyle = TextStyle(
   color: Colors.white,
 );
 
-class PokemonWidget extends StatefulWidget {
+class PokemonGridWidget extends StatelessWidget {
   final Pokemon pokemon;
 
-  const PokemonWidget({Key key, this.pokemon}) : super(key: key);
+  const PokemonGridWidget({Key key, this.pokemon}) : super(key: key);
 
-  @override
-  _PokemonWidgetState createState() => _PokemonWidgetState();
-}
-
-class _PokemonWidgetState extends State<PokemonWidget> {
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -31,9 +26,9 @@ class _PokemonWidgetState extends State<PokemonWidget> {
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           Hero(
-            tag: widget.pokemon.id,
+            tag: pokemon.id,
             child: CachedNetworkImage(
-              imageUrl: widget.pokemon.img,
+              imageUrl: pokemon.img,
               placeholder: (context, url) => Container(child: LinearProgressIndicator(),
                 margin: EdgeInsets.all(24),
               ),
@@ -44,7 +39,7 @@ class _PokemonWidgetState extends State<PokemonWidget> {
             padding: EdgeInsets.all(16),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(bottomLeft: Radius.circular(16), bottomRight: Radius.circular(16),
-                topRight: Radius.circular(24)
+              topRight: Radius.circular(24)
               ),
               color: kPrimaryColor,
             ),
@@ -52,14 +47,14 @@ class _PokemonWidgetState extends State<PokemonWidget> {
               spacing: 5,
               direction: Axis.vertical,
               children: <Widget>[
-                Text(widget.pokemon.name,
+                Text(pokemon.name,
                   maxLines: 1,
                   style: kTextStyle.copyWith(
                     fontWeight: FontWeight.w800,
                   ),
                 ),
-                Text("Height ${widget.pokemon.height}", style: kTextStyle,),
-                Text("Weight ${widget.pokemon.weight}", style: kTextStyle,),
+                Text("Height ${pokemon.height}", style: kTextStyle,),
+                Text("Weight ${pokemon.weight}", style: kTextStyle,),
               ],
             ),
           )

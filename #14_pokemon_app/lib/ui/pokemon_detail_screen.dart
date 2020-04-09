@@ -123,33 +123,34 @@ class _PokemonDetailScreenState extends State<PokemonDetailScreen> {
   }
 
   Widget _buildPokemonTypeSection() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
-          child: Text(
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(
             "Type",
             style: kBodyTextStyle.copyWith(
               fontWeight: FontWeight.w800,
               color: _darkVibrantColor,
             ),
           ),
-        ),
-        Wrap(
-          children: pokemon.type.map((typeElement) {
-            return Chip(
-              label: Text(
-                typeValues?.reverse[typeElement]?.toString() ?? "",
-                style: kHeaderTextStyle,
-              ),
-              backgroundColor: _darkVibrantColor,
-            );
-          }).toList(),
-          direction: Axis.horizontal,
-          spacing: 16,
-        ),
-      ],
+          SizedBox(height: 4,),
+          Wrap(
+            children: pokemon.type.map((typeElement) {
+              return Chip(
+                label: Text(
+                  typeValues?.reverse[typeElement]?.toString() ?? "",
+                  style: kHeaderTextStyle,
+                ),
+                backgroundColor: _darkVibrantColor,
+              );
+            }).toList(),
+            direction: Axis.horizontal,
+            spacing: 16,
+          ),
+        ],
+      ),
     );
   }
 
@@ -246,12 +247,12 @@ class _PokemonDetailScreenState extends State<PokemonDetailScreen> {
   }
 
   Widget _buildWeaknessesSection() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
-          child: Text(
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(
             "Weakness",
             style: kBodyTextStyle.copyWith(
               fontSize: 16,
@@ -259,41 +260,41 @@ class _PokemonDetailScreenState extends State<PokemonDetailScreen> {
               color: _darkVibrantColor,
             ),
           ),
-        ),
-        Wrap(
-          children: pokemon.weaknesses.map((typeElement) {
-            return Chip(
-              label: Text(
-                typeValues?.reverse[typeElement]?.toString(),
-                style: kHeaderTextStyle,
-              ),
-              backgroundColor: _darkVibrantColor,
-            );
-          }).toList(),
-          direction: Axis.horizontal,
-          spacing: 16,
-        ),
-      ],
+          SizedBox(height: 4,),
+          Wrap(
+            children: pokemon.weaknesses.map((typeElement) {
+              return Chip(
+                label: Text(
+                  typeValues?.reverse[typeElement]?.toString(),
+                  style: kHeaderTextStyle,
+                ),
+                backgroundColor: _darkVibrantColor,
+              );
+            }).toList(),
+            direction: Axis.horizontal,
+            spacing: 16,
+          ),
+        ],
+      ),
     );
   }
 
   Widget _buildEvolutionsSection() {
     return Container(
+      margin: EdgeInsets.symmetric(vertical: 16),
       width: double.maxFinite,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16),
-            child: Text(
-              "Evolution",
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.w800,
-                color: _darkVibrantColor,
-              ),
+          Text(
+            "Evolution",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.w800,
+              color: _darkVibrantColor,
             ),
           ),
+          SizedBox(height: 16,),
           Wrap(
             spacing: MediaQuery.of(context).size.width * 0.2,
             direction: Axis.horizontal,
@@ -332,15 +333,52 @@ class _PokemonDetailScreenState extends State<PokemonDetailScreen> {
     );
   }
 
+
+  Widget _buildSpawnSection() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Text(
+                "Spawn Chance",
+                style: kBodyTextStyle.copyWith(
+                  fontWeight: FontWeight.w800,
+                  color: _darkVibrantColor,
+                ),
+              ),
+              Text("${(pokemon.spawnChance * 100).round()} %",
+                style: kBodyTextStyle.copyWith(
+                  fontWeight: FontWeight.w800,
+                  color: _darkVibrantColor,
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 12,),
+          LinearProgressIndicator(
+            value: pokemon.spawnChance,
+            valueColor: AlwaysStoppedAnimation<Color>(_darkVibrantColor),
+            backgroundColor: _darkVibrantColor.withOpacity(0.3),
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildInfoSection() {
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          _buildPokemonTypeSection(),
           _buildBioSection(),
+          _buildPokemonTypeSection(),
           _buildWeaknessesSection(),
+          _buildSpawnSection(),
           _buildEvolutionsSection(),
         ],
       ),
@@ -394,6 +432,9 @@ class _PokemonDetailScreenState extends State<PokemonDetailScreen> {
 
   Widget _buildLoadingUI() {
     return Scaffold(
+      body: Center(
+        child: CircularProgressIndicator(),
+      ),
     );
   }
 
