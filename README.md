@@ -1,7 +1,9 @@
 # Flutter-UI-Kit
 A repo of Flutter UI examples
 
-## Like my work ? You can tip me [here](PayPal.Me/usmankhan18)
+
+
+## Like my work ? You can tip me [here]( https://www.paypal.com/paypalme/usmankhan18)
 
 ## Screenshots
 
